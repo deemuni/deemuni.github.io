@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- 
+Assignment Name: Final Project: Reservation Page
+File Name: book_a_tour.html
+Date: 03/19/17 
+Programmer: Dipti Muni 
+-->
+
+<html lang="en">
+<head>
+    <title>Portland Historical Tours:: Book A Tour</title>
+    <meta charset="utf-8">
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page allows visitors to make tour reservations and contact the tour company.">
+    <link href="css/portland.css" rel="stylesheet">
+    <!-- [if 1t 1E 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <a href="index.html"><header><h1>Portland Historical Tours</h1></header></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Portland Tours</a></li>
+            <li><a href="downtown_tour.html">Downtown Tour</a></li>
+            <li><a href="growth_tour.html">Growth Tour</a></li>
+            <li><a href="landmarks_tour.html">Landmarks Tour</a></li>
+            <li><a href="book_a_tour.html">Book a tour</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="general_information.html">General Information</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h2>Book a Reservation</h2>
+        <p>Required information is marked with an asterisk (*).</p>
+        <form method="post" 
+              action="http://webdevbasics.net/scripts/demo.php">
+            <!-- <label for="myTour">*Choose my Tour:</label>
+            <input type="text" name="myTour" id="myTour" list="myTour" >
+                <datalist id="myTour">
+                    <option value="Downtown Tour" label="Downtown Tour">
+                    <option value="Growth Tour" label="Growth Tour">
+                    <option value="Landmarks Tour" label="Landmarks Tour">
+                </datalist><br> -->
+            
+           
+                <h4>*Choose my Tour:</h4>
+                <select size="1" name="myTour" id="myTour" >
+                <option value="Downtown Tour">Downtown Tour</option>
+                <option value="Growth Tour">Growth Tour</option>
+                <option value="Landmarks">Landmarks Tour</option>
+            </select><br><br>
+           
+            <label for="myFName">*First Name:</label>
+            <input type="text" name="myFName" id="myFName"
+                   required="required" placeholder="your first name">
+            <label for="myLName">*Last Name:</label>
+            <input type="text" name="myLName" id="myLName"
+                   required="required" placeholder="your last name">
+            <label for="myEmail">*E-mail:</label>
+            <input type="email" name="myEmail" id="myEmail"
+                   required="required" placeholder="you@yourdomain.com">
+            <label for="myPhone">Phone:</label>
+            <input type="tel" name="myPhone" id="myPhone">
+            <label for="myDate">*Tour Date:</label>
+            <input type="date" name="myDate" id="myDate" required="required">
+            <label for="myParty">*Total Participants:</label>
+            <input type="number" name="myParty" id="myParty" min="1" max="25" required="required">
+            <label for="myComments">Does anyone in your party have food or drink sensitivities? If so, what are they?</label>
+            <textarea name="myComments" id="myComments" rows="8" cols="20"></textarea><br>
+            <input id="mySubmit" type="submit" value="Reserve">
+        </form>
+    
+    <div>
+        <span class="company">Portland Historical Tours</span><br>
+        1200 NW Naito Parkway<br>
+        Portland, OR 97209<br><br>
+        <a id="mobile" href="tel:503-555-1234">503-555-1234</a><span id="desktop">503-555-1234</span><br><br>
+    <!-- I added the a link to the phone to make a call to make it mobile friendly. -->
+    </div>
+    </main>
+    <footer>
+            Copyright &copy; 2017 Portland Historical Tours<br>
+            <a href="mailto:dipti.muni@pcc.edu">dipti.muni@pcc.edu</a>
+            
+    </footer>
+    </div>
+    </body>
+</html>
